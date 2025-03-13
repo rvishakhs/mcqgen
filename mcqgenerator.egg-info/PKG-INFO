@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: mcqgenerator
+Version: 0.1.0
+Summary: A simple MCQ generator
+Author: visakh
+Author-email: me@visakhsr.com
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: PyPDF2
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
