@@ -26,6 +26,8 @@ def get_table_data(quiz):
     Convert the quiz from string to dictable data 
     """
     try:
+        if not quiz or not quiz.strip():  # Check if empty or only whitespace
+            raise ValueError("Received empty JSON data!")
         quiz_dict = json.loads(quiz)
         quiz_table_data = []
 
