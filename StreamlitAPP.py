@@ -28,6 +28,9 @@ with open(json_path, 'r') as file:
 
 # Stremlit Part 
 
+st.set_page_config(page_title='MCQ-Gen by Visakh', page_icon="📝", layout = 'centered', initial_sidebar_state = 'auto')
+
+
 # Create a title for the app
 st.title("MCQ Generator")
 
