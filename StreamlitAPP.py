@@ -21,7 +21,7 @@ st.title("MCQ Generator")
 # Create a form using st.form 
 with st.form("user_inputs"):
     # File uploder 
-    uploaded_file = st.file_uploader("Upload a PDF ot Txt file ", type=["pdf", "txt"])
+    uploaded_file = st.file_uploader("Upload a PDF or Txt file ", type=["pdf", "txt"])
 
     # Input for the number of questions
     mcq_count = st.number_input("Number of MCQs", min_value=3, max_value=50)
