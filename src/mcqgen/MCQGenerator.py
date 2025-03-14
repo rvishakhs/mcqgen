@@ -63,6 +63,5 @@ review_prompt = PromptTemplate(
 review_chain = LLMChain(llm=llm, prompt=review_prompt, output_key="review", verbose=True)
 
 # Create an object of the SequentialChain class
-generate_Quiz_Evaluate_Chain = SequentialChain(chains=[quiz_chain, review_chain], 
-                                               input_variables=["text", "number", "subject", "tone", "response_json"],
-                                               output_variabels=["quiz", "review"], verbose=True)
+generate_Quiz_Evaluate_Chain = SequentialChain(chains=[quiz_chain, review_chain], input_variables=["text", "number", "subject", "tone", "response_json"],
+                                               output_variables=["quiz","review"], verbose=True)
