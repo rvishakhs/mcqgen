@@ -1,5 +1,8 @@
 # Educational MCQ Generator App
 
+## 🚀 Live website
+https://mcqgen-visakhsr.streamlit.app/
+
 ## 📌 Overview
 The **Educational MCQ Generator App** is a Streamlit-based web application that dynamically generates multiple-choice questions (MCQs) using OpenAI's **GPT-3.5-Turbo**. This project leverages **LangChain** for efficient LLM chaining, prompt engineering, and structured workflows.
 
@@ -44,9 +47,11 @@ streamlit run StreamlitAPP.py
 ```
 
 ## 📖 Usage
-1. Enter a topic or subject.
-2. Click **Generate MCQs**.
-3. View and download the generated questions.
+1. Upload a pdf or txt file with the topic 
+2. Enter the subject.
+3. Enter the number of questions 
+4. Select the difficulty level of questions 
+5. Click **Generate MCQs**.
 
 ## 🔥 Future Enhancements
 - Integration with other LLMs (GPT-4, Claude, or better opensource models)
