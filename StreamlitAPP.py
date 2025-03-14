@@ -9,9 +9,22 @@ from langchain.callbacks import get_openai_callback
 from src.mcqgen.MCQGenerator import generate_Quiz_Evaluate_Chain
 from src.mcqgen.logger import logging 
 
-# Load json file 
-with open('/Users/visakh/Desktop/Gen_AI/mcqgen/response.json', 'r') as file:
+
+# Load json file Manually from the folder
+#with open('/Users/visakh/Desktop/Gen_AI/mcqgen/response.json', 'r') as file:
+#    Response_JSON = json.load(file)
+
+# Load json file dynamically from the folder in order to get production ready
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+json_path = os.path.join(script_dir, "response.json")
+
+with open(json_path, 'r') as file:
     Response_JSON = json.load(file)
+
+
+
 
 # Stremlit Part 
 
