@@ -74,8 +74,9 @@ with st.form("user_inputs"):
                 print(f"Total Cost: {cb.total_cost}")
                 if isinstance(response, dict):
                     # Extract the quiz data from the response
-                    quiz=response.get("quiz", None)
-                    if quiz:
+                    quiz=response.get("quiz")
+                    print(quiz)
+                    if quiz is not None:
                         # Get the table data
                         table_data = get_table_data(quiz)
                         if table_data:
@@ -88,6 +89,8 @@ with st.form("user_inputs"):
                             st.text_area("Review", response.get("review", "No Review"))
                         else:
                             st.error("Error in Table data")
+                    else:
+                        st.error("Error in Quiz data")
 
                 else: 
                     st.write(response)
